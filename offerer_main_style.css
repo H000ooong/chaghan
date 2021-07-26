@@ -1,0 +1,151 @@
+#offerer_account {
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  width: 290px;
+  height: 120px;
+  margin-left: 8px;
+  margin: 0;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}
+
+#offerer_account .offerer_num {
+  position: relative;
+  display: inline-block;
+  width: 169px;
+  height: 21px;
+  padding: 10px 10px 9px;
+  text-align: center;
+}
+
+#offerer_account .offerer_information {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: inline-block;
+  width: 79px;
+  height: 80px;
+  padding: 0 5px;
+  text-align: center;
+}
+#corname {
+  width: 79px;
+  height: 50px;
+}
+#username {
+  width: 79px;
+  height: 30px;
+}
+
+#offerer_account .offerer_state {
+  position: absolute;
+  top: 40px;
+  left: 89px;
+  display: inline-block;
+  width: 80px;
+  height: 75px;
+  padding: 0 10px 5px;
+}
+#offerer_account .offerer_state li {
+  height: 20px;
+  padding-bottom: 5px;
+  color: gold;
+  font-size: 15px;
+}
+
+#offerer_account .offerer_links {
+  position: absolute;
+  top: 0px;
+  left: 190px;
+  width: 80px;
+  height: 90px;
+  padding: 15px 10px;
+  border-left: 1px solid gold;
+}
+#logout, #info {
+  border: 2px solid gold;
+  color: gold;
+  font-weight: bold;
+  cursor: pointer;
+}
+#logout {
+  padding: 5px 6px;
+}
+#info {
+  margin-top: 20px;
+  padding: 5px 14px;
+}
+
+#body .main_area {
+  position: relative;
+  margin: 0 1px;
+}
+
+#main_tab input[type="radio"] {
+  display: none;
+}
+#main_tab label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 296px;
+  height: 28px;
+  padding-top: 2px;
+  color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+#main_tab label[for="main_tab1"] {
+  position: relative;
+}
+#main_tab label[for="main_tab2"] {
+  position: absolute;
+  top: 0;
+  left: 296px;
+  border-left: 0px;
+  border-right: 0px;
+}
+#main_tab label[for="main_tab3"] {
+  position: absolute;
+  top: 0;
+  left: 592px;
+}
+#main_tab1:checked+label[for="main_tab1"] {
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}
+
+#main_tab2:checked+label[for="main_tab2"] {
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}
+#main_tab3:checked+label[for="main_tab3"] {
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}
+
+#main_tab .tab_con {
+  position: relative;
+  display: none;
+}
+#main_tab1:checked~.manage_post {
+  display: block;
+  width: 888px;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}
+#main_tab2:checked~.manage_staff {
+  display: block;
+  width: 888px;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}
+#main_tab3:checked~.manage_money {
+  display: block;
+  width: 888px;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}

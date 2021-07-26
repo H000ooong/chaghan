@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>착한사장님 로그인</title>
+    <meta name="keyword" content="착한사장님, 아르바이트, 알바, 구인구직, 구인, 구직, 채용, 로그인">
+    <meta name="description" content="착한사장님 이용을 위한 구직자 로그인 페이지">
+    <meta name="author" content="chaghan">
+    <link rel="stylesheet" href="whole_style.css">
+    <link rel="stylesheet" href="login_style.css">
+  </head>
+  <body class="chaghan_login">
+    <div class="loginPop">
+      <div id="head">
+        <h1>착한사장님</h1>
+      </div>
+      <div id="loginArea">
+        <div class="login_tab">
+          <form id="tab_form">
+            <input type="radio" name="tab_menu" id="tool_tab1"/>
+            <label for="tool_tab1">구인자</label>
+            <input type="radio" name="tab_menu" id="tool_tab2" checked/>
+            <label for="tool_tab2">구직자</label>
+            <div class="input_con">
+                <input type="text" id="login_id" placeholder="아이디"/>
+                <input type="password" id="login_pw" placeholder="비밀번호"/>
+            </div>
+            <div class="tab_con offerer">
+              <input type="submit" id="login_off" value="로그인" onclick="window.opener.location.href='offerer_main.html'; window.close();"/>
+            </div>
+            <div class="tab_con hunter">
+              <input type="submit" id="login_hun" value="로그인" onclick="window.opener.location.href='hunter_main.html'; window.close();"/>
+              <nav id="login_sns">
+                <ul>
+                  <li><img src="facebook.png" width=100% height=100%></li>
+                  <li><img src="google.png" width=100% height=100%></li>
+                <ul>
+              </nav>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="subArea">
+        <a href="#;" onclick="opener.location.href='.html'; window.close();">아이디 찾기</a>
+        <span>/</span>
+        <a href="#;" onclick="opener.location.href='.html'; window.close();">비밀번호 찾기</a>
+        <span>|</span>
+        <a href="#;" onclick="opener.location.href='join.html'; window.close();">회원가입</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+#head {
+  width: 962px;
+  padding: 10px 0;
+  margin: 0 auto;
+  background-color: rgb(58, 73, 156);
+}
+
+#head .logo {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+}
+#head .page {
+  position: relative;
+  display: inline-block;
+}
+#head a, h2 {
+  color: gold;
+}
+
+#body {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  border-left: 1px solid rgb(58, 73, 156);
+  border-right: 1px solid rgb(58, 73, 156);
+}
+
+#body .title {
+  position: relative;
+  padding: 50px 0;
+  color: rgb(58, 73, 156);
+  font-size: 30px;
+  text-align: center;
+}
+
+#body .agree_join {
+  position: relative;
+  padding: 10px;
+  margin: 0 200px;
+  border: 3px solid rgb(58, 73, 156);
+  font-size: 15px;
+}
+#body .agreeAll {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(58, 73, 156);
+}
+#body .agree_join strong {
+  color: rgb(58, 73, 156);
+}
+
+#body .enter_infor {
+  position: relative;
+  margin: 30px 200px 10px;
+}
+#body .enter_infor table {
+  width: 560px;
+}
+#body .enter_infor tr {
+  height: 30px;
+}
+#body .enter_infor th {
+  width: 130px;
+  color: rgb(58, 73, 156);
+  text-align: left;
+}
+#get_verinum, #search_address {
+  width: 100px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgb(58, 73, 156);
+  border: 3px solid gold;
+  color: gold;
+  cursor: pointer;
+}
+#check_verinum, #check_corregnum {
+  width: 50px;
+  height: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgb(58, 73, 156);
+  border: 3px solid gold;
+  color: gold;
+  cursor: pointer;
+}
+#line div {
+  border-top: 1px solid rgb(58, 73, 156);
+}
+#corregnum1, #corregnum2, #corregnum3 {
+  width: 50px;
+}
+
+#body .offerer_join_btn {
+  position: relative;
+  padding-bottom: 30px;
+  margin: 0 200px;
+  text-align: center;
+}
+#body .hunter_join_btn {
+  position: relative;
+  padding-bottom: 130px;
+  margin: 0 200px;
+  text-align: center;
+}
+#join_btn {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(58, 73, 156);
+  border: 3px solid gold;
+  color: gold;
+  cursor: pointer;
+}

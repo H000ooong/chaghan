@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>착한사장님 회원가입</title>
+    <meta name="keyword" content="착한사장님, 아르바이트, 알바, 구인구직, 구인, 구직, 채용, 로그인">
+    <meta name="description" content="착한사장님 이용을 위한 구직자 회원가입 페이지">
+    <meta name="author" content="chaghan">
+    <link rel="stylesheet" href="whole_style.css">
+    <link rel="stylesheet" href="join_inner_style.css">
+  </head>
+  <body class="chaghan_hj">
+    <div id="head">
+      <div class="logo">
+        <h1><a href="index.html">착한사장님</a></h1>
+      </div>
+      <div class="page">
+        <h2>회원가입</h2>
+      </div>
+    </div>
+    <div id="body">
+      <div class="title">
+        <h3>구직자 회원가입</h3>
+      </div>
+      <div class="agree_join">
+        <form>
+          <div class="agreeAll">
+            <input type="checkbox" id="all"/>
+            <label for="all">필수동의 항목 및 [선택]개인정보 수집 및 이용 동의, [선택]광고성 정보 이메일/SMS 수신 동의에 일괄 동의합니다.</label>
+          </div>
+          <div class="agree0">
+            <input type="checkbox" id="zero"/>
+            <label for="zero"><strong>[필수]</strong> 만 15세 이상입니다.</label>
+          </div>
+          <div class="agree1">
+            <input type="checkbox" id="one"/>
+            <label for="one"><strong>[필수]</strong> 서비스 이용약관 동의</label>
+          </div>
+          <div class="agree2">
+            <input type="checkbox" id="two"/>
+            <label for="two"><strong>[필수]</strong> 개인정보 수집 및 이용 동의</label>
+          </div>
+          <div class="agree3">
+            <input type="checkbox" id="thr"/>
+            <label for="thr">[선택] 개인정보 수집 및 이용 동의</label>
+          </div>
+          <div class="agree4">
+            <input type="checkbox" id="fou"/>
+            <label for="fou">[선택] 광고성 정보 이메일/SMS 수신 동의</label>
+          </div>
+        </form>
+      </div>
+      <div class="enter_infor">
+        <table>
+          <tr>
+            <th>아이디</th>
+            <td><input type="text" id="id"/></td>
+          </tr>
+          <tr>
+            <th>비밀번호</th>
+            <td><input type="password" id="pw"/></td>
+          </tr>
+          <tr>
+            <th>비밀번호 확인</th>
+            <td><input type="password" id="pwch"/></td>
+          </tr>
+          <tr>
+            <td colspan="2" id="line"><div></div></td>
+          </tr>
+          <tr>
+            <th>사용자명</th>
+            <td><input type="text" id="username"/></td>
+          </tr>
+          <tr>
+            <th>휴대폰번호</th>
+            <td>
+              <input type="text" id="phonenum" placeholder="'-'없이 입력"/>
+              <input type="button" id="get_verinum" value="인증번호 받기"/>
+            </td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>
+              <input type="text" id="verinum" placeholder="인증번호 입력"/>
+              <input type="button" id="check_verinum" value="확인"/>
+            </td>
+          </tr>
+          <tr>
+            <th>이메일</th>
+            <td>
+              <input type="text" id="email" placeholder="email@chaghan.com"/>
+            </td>
+          </tr>
+          <tr>
+            <th>주소</th>
+            <td>
+              <input type="text" id="coradd1" readonly/>
+              <input type="button" id="search_address" value="주소 검색"/>
+            </td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>
+              <input type="text" id="coradd2" placeholder="세부주소 입력"/>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" id="line"><div></div></td>
+          </tr>
+        </table>
+      </div>
+      <div class="hunter_join_btn">
+        <input type="button" id="join_btn" value="가입하기" onclick="location.href='join_check.html'"/>
+      </div>
+    </div>
+  </body>
+</html>

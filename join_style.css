@@ -1,0 +1,128 @@
+#head {
+  width: 962px;
+  padding: 10px 0;
+  margin: 0 auto;
+  background-color: rgb(58, 73, 156);
+}
+
+#head .logo {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px;
+}
+#head .page {
+  position: relative;
+  display: inline-block;
+}
+#head a, h2 {
+  color: gold;
+}
+
+#body {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  border-left: 1px solid rgb(58, 73, 156);
+  border-right: 1px solid rgb(58, 73, 156);
+}
+
+#body .title {
+  position: relative;
+  padding: 100px 0;
+  color: rgb(58, 73, 156);
+  font-size: 30px;
+  text-align: center;
+}
+
+#body .select_join {
+  position: relative;
+  padding: 0 50px 270px;
+}
+#body .offerer_join {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin-right: 60px;
+  background-color: rgb(58, 73, 156);
+}
+#body .hunter_join {
+  position: absolute;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(58, 73, 156);
+}
+
+#offerer_title, #hunter_title {
+  padding: 50px 0;
+  color: gold;
+  font-size: 25px;
+  text-align: center;
+}
+
+#offerer_btn {
+  padding: 50px 50px 150px;
+}
+#hunter_btn {
+  padding: 50px;
+}
+#join_btn1, #join_btn2 {
+  width: 300px;
+  height: 67px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(58, 73, 156);
+  border: 3px solid gold;
+  color: gold;
+  cursor: pointer;
+}
+
+#join_sns {
+  padding: 30px 0;
+  text-align: center;
+}
+#join_sns ul li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 10px;
+}
+
+#check_body {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  border-left: 1px solid rgb(58, 73, 156);
+  border-right: 1px solid rgb(58, 73, 156);
+}
+#check_body .message {
+  position: relative;
+  width: 700px;
+  padding: 200px 10px 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+#check_body .message p {
+  padding: 20px 0;
+  color: rgb(58, 73, 156);
+  font-size: 27px;
+  font-weight: bold;
+}
+#check_body .btn_form {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  padding-bottom: 364px;
+  margin: 0 auto;
+  text-align: center;
+}
+#main_btn {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(58, 73, 156);
+  border: 3px solid gold;
+  color: gold;
+  cursor: pointer;
+}
