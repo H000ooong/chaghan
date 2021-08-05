@@ -72,6 +72,174 @@
   padding: 5px 14px;
 }
 
+#body .simple_area {
+  position: relative;
+  width: 890px;
+  height: 170px;
+  margin-bottom: 30px;
+}
+#body .search_post, .daily, .simple_work_time, .cumulative_pay {
+  display: inline-block;
+  width: 211px;
+  height: 150px;
+  padding: 10px 5px;
+  border-right: 2px solid rgb(58, 73, 156);
+}
+
+#body .search_post {
+  position: relative;
+  text-align: center;
+}
+#select_search select {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-color: rgb(58, 73, 156);
+  color: rgb(58, 73, 156);
+}
+#select_search input {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(58, 73, 156);
+  color: gold;
+  cursor: pointer;
+}
+
+#body .daily {
+  position: absolute;
+  top: 0;
+  left: 223px;
+  width: 221px;
+  height: 170px;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
+#body .daily h5 {
+  color: rgb(58, 73, 156);
+  font-size: 18px;
+}
+#daily_list li {
+  width: 150px;
+  margin: 10px auto 0;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid rgb(58, 73, 156);
+  color: rgb(58, 73, 156);
+}
+#daily_time, #daily_brand {
+  border-bottom: 1px solid rgb(58, 73, 156);
+}
+#daily_brand img {
+  display: block;
+  width: 100px;
+  height: 50px;
+  padding: 0 25px;
+}
+#daily_work a {
+  color: rgb(58, 73, 156);
+  cursor: pointer;
+}
+#daily_work a:hover {
+  text-decoration: underline;
+}
+
+#body .simple_work_time {
+  position: absolute;
+  top: 0;
+  left: 446px;
+  color: rgb(58, 73, 156);
+  font-weight: bold;
+}
+#body .simple_work_time h5 {
+  height: 22px;
+  padding: 4px 0;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+  font-size: 15px;
+  text-align: center;
+}
+#whole_time, #recent {
+  position: relative;
+  border: 1px solid rgb(58, 73, 156);
+}
+#whole_time {
+  margin-bottom: 26px;
+}
+#whole_time span {
+  display: inline-block;
+  width: 209px;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 18px;
+}
+#recent_day {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  border-right: 1px solid rgb(58, 73, 156);
+}
+#recent_time {
+  position: absolute;
+  display: inline-block;
+  top: 30px;
+  left: 59px;
+  width: 150px;
+  height: 60px;
+}
+#recent_time span {
+  display: inline-block;
+  width: 150px;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+#body .cumulative_pay {
+  position: absolute;
+  top: 0;
+  left: 669px;
+  height: 156px;
+  padding-bottom: 4px;
+  border: 0;
+}
+#month_whole_pay {
+  margin-bottom: 5px;
+  color: rgb(58, 73, 156);
+  font-weight: bold;
+}
+#month_whole_pay h5 {
+  height: 22px;
+  padding: 4px 0;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+  font-size: 15px;
+  text-align: center;
+}
+#month_whole_pay span {
+  display: inline-block;
+  width: 209px;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid rgb(58, 73, 156);
+}
+#month_separate_pay {
+  border-collapse: collapse;
+  width: 211px;
+}
+#month_separate_pay th, #month_separate_pay td {
+  color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+  text-align: center;
+}
+
 #body .main_area {
   position: relative;
   margin: 0 1px;
@@ -84,10 +252,11 @@
   box-sizing: border-box;
   display: inline-block;
   width: 222px;
-  height: 28px;
-  padding-top: 2px;
+  height: 35px;
+  padding-top: 5px;
   color: rgb(58, 73, 156);
   border: 1px solid rgb(58, 73, 156);
+  border-bottom: 3px solid rgb(58, 73, 156);
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -115,23 +284,32 @@
   left: 666px;
 }
 #main_tab1:checked+label[for="main_tab1"] {
-  background-color: rgb(58, 73, 156);
-  color: gold;
+  height: 35px;
+  padding-top: 2px;
+  border: 3px solid rgb(58, 73, 156);
+  border-bottom: 0;
 }
 #main_tab2:checked+label[for="main_tab2"] {
-  background-color: rgb(58, 73, 156);
-  color: gold;
+  height: 35px;
+  padding-top: 2px;
+  border: 3px solid rgb(58, 73, 156);
+  border-bottom: 0;
 }
 #main_tab3:checked+label[for="main_tab3"] {
-  background-color: rgb(58, 73, 156);
-  color: gold;
+  height: 35px;
+  padding-top: 2px;
+  border: 3px solid rgb(58, 73, 156);
+  border-bottom: 0;
 }
 #main_tab4:checked+label[for="main_tab4"] {
-  background-color: rgb(58, 73, 156);
-  color: gold;
+  height: 35px;
+  padding-top: 2px;
+  border: 3px solid rgb(58, 73, 156);
+  border-bottom: 0;
 }
 
 #main_tab .tab_con {
+  box-sizing: border-box;
   position: relative;
   display: none;
 }
@@ -139,24 +317,335 @@
   display: block;
   width: 888px;
   padding-top: 20px;
-  color: gold;
-  background-color: rgb(58, 73, 156);
+  border: 3px solid rgb(58, 73, 156);
+  border-top: 0;
 }
 #main_tab2:checked~.schedule {
   display: block;
   width: 888px;
-  color: gold;
-  background-color: rgb(58, 73, 156);
+  padding: 20px 0;
+  border: 3px solid rgb(58, 73, 156);
+  border-top: 0;
 }
 #main_tab3:checked~.working_hours {
   display: block;
   width: 888px;
-  color: gold;
-  background-color: rgb(58, 73, 156);
+  border: 3px solid rgb(58, 73, 156);
+  border-top: 0;
 }
 #main_tab4:checked~.check_pay {
   display: block;
   width: 888px;
+  padding: 30px 0;
+  border: 3px solid rgb(58, 73, 156);
+  border-top: 0;
+}
+
+#schedule_area {
+  position: relative;
+  width: 869px;
+  margin: 0 7px;
+  border-collapse: collapse;
+  text-align: center;
+}
+#schedule_area th, #schedule_area td {
+  width: 124px;
+  border: 1px solid rgb(58, 73, 156);
+  color: rgb(58, 73, 156);
+}
+#schedule_area td {
+  height: 200px;
+  vertical-align: top;
+}
+
+#schedule_area .schedule_con {
+  position: relative;
+  width: 120px;
+  height: 47px;
+  margin: 10px 2px 0px;
+  border-radius: 10%;
+  background-color: rgb(58, 73, 156);
+}
+#schedule_area .schedule_time, .schedule_name {
+  color: gold;
+  padding-top: 2px;
+}
+#schedule_area .schedule_time {
+  height: 18px;
+  font-size: 12px;
+}
+#schedule_area .schedule_name {
+  height: 25px;
+  font-size: 16px;
+  border-top: 1px solid gold;
+}
+
+#working_hours_list {
+  position: relative;
+  padding: 20px;
+}
+#working_hours_list .brand_list {
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid rgb(58, 73, 156);
+}
+#working_hours_list .brand_name {
+  position: relative;
+  height: 35px;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
   color: gold;
   background-color: rgb(58, 73, 156);
+  text-align: center;
+}
+#working_hours_list .brand_contract {
+  position: relative;
+  height: 100px;
+  padding: 5px;
+  border-bottom: 1px solid rgb(58, 73, 156);
+  text-align: center;
+}
+#working_hours_list .search_work_time {
+  position: relative;
+  height: 22px;
+  padding: 10px 30px;
+  border-bottom: 1px solid rgb(58, 73, 156);
+}
+#search_start_day {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(58, 73, 156);
+  text-align: center;
+}
+#search_finish_day {
+  position: absolute;
+  top: 10px;
+  left: 181px;
+  width: 150px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(58, 73, 156);
+  text-align: center;
+}
+#day_search_btn {
+  position: absolute;
+  top: 10px;
+  left: 331px;
+  width: 50px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid rgb(58, 73, 156);
+  color: gold;
+  background-color: rgb(58, 73, 156);
+  font-size: 12px;
+  font-weight: bold;
+}
+#whole_time_label {
+  position: absolute;
+  top: 10px;
+  right: 181px;
+  width: 150px;
+  height: 20px;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+#search_whole_time {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 150px;
+  height: 20px;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+  text-align: center;
+}
+#working_hours_list .work_time_list {
+  position: relative;
+  width: 800px;
+  padding: 10px 20px;
+  text-align: center;
+}
+#working_hours_list table {
+  border-collapse: collapse;
+  width: 800px;
+}
+#working_hours_list th {
+  height: 30px;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+}
+#working_hours_list td {
+  height: 30px;
+  color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+  font-size: 15px;
+  font-weight: bold;
+}
+#change_btn {
+  width: 50px;
+  height: 24px;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+  cursor: pointer;
+}
+
+#body .account_information {
+  position: relative;
+  margin: 0 100px;
+  height: 150px;
+  background-color: rgb(58, 73, 156);
+}
+#bank_information {
+  padding-left: 10px;
+  font-size: 20px;
+  color: gold;
+}
+#whole_pay {
+  padding-top: 30px;
+  font-size: 40px;
+  color: gold;
+  font-weight: bold;
+  text-align: center;
+}
+
+#body .search_pay {
+  position: relative;
+  height: 22px;
+  padding: 15px 96px;
+  margin: 30px 10px;
+  border-top: 1px solid rgb(58, 73, 156);
+  border-bottom: 1px solid rgb(58, 73, 156);
+}
+#term_search {
+  position: relative;
+  display: inline-block;
+  width: 303px;
+  height: 22px;
+}
+#search_start_day2 {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(58, 73, 156);
+  text-align: center;
+}
+#search_finish_day2 {
+  position: absolute;
+  top: 0;
+  left: 151px;
+  width: 150px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(58, 73, 156);
+  text-align: center;
+}
+#brand_search, #pay_search {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 22px;
+}
+#brand_search select, #pay_search select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 22px;
+  color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+}
+#search_pay_btn {
+  position: absolute;
+  right: 96px;
+  width: 50px;
+  height: 22px;
+  padding: 0;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+}
+
+#body .separate_pay {
+  position: relative;
+  padding: 0 200px;
+}
+#body .separate_pay table {
+  border-collapse: collapse;
+  display: inline-block;
+}
+#body .separate_pay th {
+  color: rgb(58, 73, 156);
+  width: 50px;
+  text-align: left;
+}
+#body .separate_pay td {
+  color: rgb(58, 73, 156);
+  width: 100px;
+  text-align: right;
+}
+#arrow {
+  position: relative;
+  display: inline-block;
+  width: 182px;
+  height: 84px;
+}
+#arrow img {
+  width: 50px;
+  height: 50px;
+  padding: 17px 66px;
+}
+#pay_sum {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 532px;
+  width: 150px;
+  height: 84px;
+}
+#pay_sum span {
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  padding: 23px 0;
+  font-size: 25px;
+  color: rgb(58, 73, 156);
+  text-align: center;
+}
+
+#body .pay_list {
+  position: relative;
+  width: 800px;
+  padding: 30px 41px 0;
+  text-align: center;
+}
+#body .pay_list table {
+  border-collapse: collapse;
+  width: 800px;
+}
+#body .pay_list th {
+  height: 30px;
+  color: gold;
+  background-color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+}
+#body .pay_list td {
+  height: 30px;
+  color: rgb(58, 73, 156);
+  border: 1px solid rgb(58, 73, 156);
+  font-size: 15px;
+  font-weight: bold;
 }

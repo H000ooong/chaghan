@@ -1,5 +1,5 @@
 #head {
-  padding-top: 50px;
+  padding-top: 40px;
   margin: 0 auto;
   text-align: center;
 }
@@ -16,7 +16,7 @@
 
 #loginArea .login_tab {
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #tab_form input[type="radio"] {
   display: none;
@@ -25,10 +25,11 @@
   box-sizing: border-box;
   display: inline-block;
   width: 50%;
-  height: 28px;
-  padding-top: 2px;
+  height: 35px;
+  padding-top: 5px;
   color: rgb(58, 73, 156);
   border: 1px solid rgb(58, 73, 156);
+  border-bottom: 3px solid rgb(58, 73, 156);
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -44,25 +45,30 @@
   border-left: 0px;
 }
 #tool_tab1:checked+label[for="tool_tab1"] {
-  background-color: rgb(58, 73, 156);
-  color: gold;
+  height: 35px;
+  padding-top: 2px;
+  border: 3px solid rgb(58, 73, 156);
+  border-bottom: 0;
 }
 #tool_tab2:checked+label[for="tool_tab2"] {
-  background-color: rgb(58, 73, 156);
-  color: gold;
+  height: 35px;
+  padding-top: 2px;
+  border: 3px solid rgb(58, 73, 156);
+  border-bottom: 0;
 }
 
 #tab_form .input_con {
   position: relative;
   padding: 20px 0;
   text-align: center;
-  background-color: rgb(58, 73, 156);
+  border-left: 3px solid rgb(58, 73, 156);
+  border-right: 3px solid rgb(58, 73, 156);
 }
 #login_id, #login_pw {
   width: 70%;
   height: 30px;
   margin-bottom: 10px;
-  border: 3px solid gold;
+  border: 1px solid rgb(58, 73, 156);
 }
 
 #tab_form .tab_con {
@@ -73,17 +79,18 @@
 #tool_tab1:checked~.offerer {
   display: block;
   padding-bottom: 30px;
-  background-color: rgb(58, 73, 156);
+  border-left: 3px solid rgb(58, 73, 156);
+  border-right: 3px solid rgb(58, 73, 156);
 }
 #tool_tab2:checked~.hunter {
   display: block;
   padding-bottom: 30px;
-  background-color: rgb(58, 73, 156);
+  border-left: 3px solid rgb(58, 73, 156);
+  border-right: 3px solid rgb(58, 73, 156);
 }
 #login_off, #login_hun {
   width: 50%;
   height: 40px;
-  border: 3px solid gold;
   background-color: rgb(58, 73, 156);
   color: gold;
   font-size: 15px;
@@ -100,7 +107,6 @@
   height: 30px;
   padding: 5px;
   margin: 0 5px;
-  border: 3px solid gold;
   cursor: pointer;
 }
 
@@ -110,11 +116,12 @@
   margin: 0 40px;
   font-size: 15px;
   text-align: center;
-  color: gold;
-  background-color: rgb(58, 73, 156);
+  color: rgb(58, 73, 156);
+  border: 3px solid rgb(58, 73, 156);
+  border-top: 0;
 }
 #subArea a {
-  color: gold;
+  color: rgb(58, 73, 156);
 }
 #subArea a:hover {
   text-decoration: underline;

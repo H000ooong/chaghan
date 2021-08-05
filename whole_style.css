@@ -22,6 +22,10 @@ ol, ul {
   list-style: none;
 }
 
+select .guide {
+  color: gray;
+}
+
 .clear {
   clear: both;
 }

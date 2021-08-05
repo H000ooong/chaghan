@@ -71,12 +71,99 @@
                   </div>
                 </div>
               </div>
+              <div class="simple_area">
+                <div class="search_post">
+                  <form id="select_search">
+                    <select name="select_loc">
+                      <option value="none_loc">지역 선택</option>
+                      <option value="all_loc" selected>전국</option>
+                    </select>
+                    <select name="select_work">
+                      <option value="none_work">업직종 선택</option>
+                      <option value="all_work" selected>모든 업직종</option>
+                    </select>
+                    <select name="select_term">
+                      <option value="none_term">기간 선택</option>
+                      <option value="all_term" selected>모든 기간</option>
+                    </select>
+                    <select name="select_time">
+                      <option value="none_time">시간 선택</option>
+                      <option value="all_time" selected>모든 시간</option>
+                    </select>
+                    <select name="select_pay">
+                      <option value="none_pay">급여 선택</option>
+                      <option value="all_pay" selected>모든 급여</option>
+                    </select>
+                    <select name="select_target">
+                      <option value="none_target">대상 선택</option>
+                      <option value="all_target" selected>모든 대상</option>
+                    </select>
+                    <input type="button" value="공고 검색"/>
+                  </form>
+                </div>
+                <div class="daily">
+                  <h5>8/10</h5>
+                  <ul id="daily_list">
+                    <li>
+                      <div id="daily_time">
+                        <span id="daily_time">14:00~18:00</span>
+                      </div>
+                      <div id="daily_brand">
+                        <img src="coupang.png">
+                        <span>쿠팡</span>
+                      </div>
+                      <div id="daily_work">
+                        <span><a>물류정리</a></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="simple_work_time">
+                  <div id="whole_time">
+                    <h5>총 근무시간</h5>
+                    <span>4시간 10분</span>
+                  </div>
+                  <div id="recent">
+                    <h5>최근 근무시간</h5>
+                    <div id="recent_day">
+                      <span>8/3</span>
+                    </div>
+                    <div id="recent_time">
+                      <span>14:00~18:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cumulative_pay">
+                  <div id="month_whole_pay">
+                    <h5>이번 달 누적 급여</h5>
+                    <span>36,333원</span>
+                  </div>
+                  <table id="month_separate_pay">
+                    <tr>
+                      <th colspan="row">급여</th>
+                      <td>34,880원</td>
+                    </tr>
+                    <tr>
+                      <th colspan="row">연장</th>
+                      <td>1,453원</td>
+                    </tr>
+                    <tr>
+                      <th colspan="row">주휴</th>
+                      <td>-원</td>
+                    </tr>
+                    <tr>
+                      <th colspan="row">야간</th>
+                      <td>-원</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
               <div class="main_area">
                 <form id="main_tab">
                   <input type="radio" name="tab_menu" id="main_tab1" checked/>
                   <label for="main_tab1">공고</label>
                   <input type="radio" name="tab_menu" id="main_tab2"/>
-                  <label for="main_tab2">일정</label>
+                  <label for="main_tab2">달력</label>
                   <input type="radio" name="tab_menu" id="main_tab3"/>
                   <label for="main_tab3">근무시간</label>
                   <input type="radio" name="tab_menu" id="main_tab4"/>
@@ -512,13 +599,273 @@
                     </div>
                   </div>
                   <div class="tab_con schedule">
-                    일정
+                    <table id="schedule_area">
+                      <tr>
+                        <th colspan="col">일요일</th>
+                        <th colspan="col">월요일</th>
+                        <th colspan="col">화요일</th>
+                        <th colspan="col">수요일</th>
+                        <th colspan="col">목요일</th>
+                        <th colspan="col">금요일</th>
+                        <th colspan="col">토요일</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>1</span>
+                        </td>
+                        <td>
+                          <span>2</span>
+                        </td>
+                        <td>
+                          <span>3</span>
+                          <div class="schedule_con">
+                            <div class="schedule_time">
+                              <span>14:00~18:00</span>
+                            </div>
+                            <div class="schedule_name">
+                              <span>쿠팡</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <span>4</span>
+                        </td>
+                        <td>
+                          <span>5</span>
+                        </td>
+                        <td>
+                          <span>6</span>
+                        </td>
+                        <td>
+                          <span>7</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>8</span>
+                        </td>
+                        <td>
+                          <span>9</span>
+                        </td>
+                        <td>
+                          <span>10</span>
+                          <div class="schedule_con">
+                            <div class="schedule_time">
+                              <span>14:00~18:00</span>
+                            </div>
+                            <div class="schedule_name">
+                              <span>쿠팡</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <span>11</span>
+                        </td>
+                        <td>
+                          <span>12</span>
+                        </td>
+                        <td>
+                          <span>13</span>
+                        </td>
+                        <td>
+                          <span>14</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>15</span>
+                        </td>
+                        <td>
+                          <span>16</span>
+                        </td>
+                        <td>
+                          <span>17</span>
+                          <div class="schedule_con">
+                            <div class="schedule_time">
+                              <span>14:00~18:00</span>
+                            </div>
+                            <div class="schedule_name">
+                              <span>쿠팡</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <span>18</span>
+                        </td>
+                        <td>
+                          <span>19</span>
+                        </td>
+                        <td>
+                          <span>20</span>
+                        </td>
+                        <td>
+                          <span>21</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>22</span>
+                        </td>
+                        <td>
+                          <span>23</span>
+                        </td>
+                        <td>
+                          <span>24</span>
+                          <div class="schedule_con">
+                            <div class="schedule_time">
+                              <span>14:00~18:00</span>
+                            </div>
+                            <div class="schedule_name">
+                              <span>쿠팡</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <span>25</span>
+                        </td>
+                        <td>
+                          <span>26</span>
+                        </td>
+                        <td>
+                          <span>27</span>
+                        </td>
+                        <td>
+                          <span>28</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span>29</span>
+                        </td>
+                        <td>
+                          <span>30</span>
+                        </td>
+                        <td>
+                          <span>31</span>
+                          <div class="schedule_con">
+                            <div class="schedule_time">
+                              <span>14:00~18:00</span>
+                            </div>
+                            <div class="schedule_name">
+                              <span>쿠팡</span>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                   <div class="tab_con working_hours">
-                    근무시간 확인 및 수정
+                    <ul id="working_hours_list">
+                      <li class="brand_list" id="brand_1">
+                        <div class="brand_name">
+                          <span>쿠팡</span>
+                        </div>
+                        <div class="brand_contract">
+                          <p>근로계약서 요약</p>
+                        </div>
+                        <div class="search_work_time">
+                          <input type="text" id="search_start_day" placeholder="검색시작날짜"/>
+                          <input type="text" id="search_finish_day" placeholder="검색끝날짜"/>
+                          <input type="button" id="day_search_btn" value="검색"/>
+                          <span id="whole_time_label">기간 내 총 근무시간</span>
+                          <input type="text" id="search_whole_time" value="4시간 10분" readonly/>
+                        </div>
+                        <div class="work_time_list">
+                          <table>
+                            <tr>
+                              <th>날짜</th>
+                              <th>출근시간</th>
+                              <th>퇴근시간</th>
+                              <th>근무시간</th>
+                              <th>수정</th>
+                            </tr>
+                            <tr>
+                              <td>8/3</td>
+                              <td>14:00</td>
+                              <td>18:10</td>
+                              <td>4시간 10분</td>
+                              <td><input type="button" id="change_btn" value="수정"/></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                   <div class="tab_con check_pay">
-                    급여 확인
+                    <div class="account_information">
+                      <div id="bank_information">
+                        <span>00은행</span>
+                        <span>000-000-000000</span>
+                      </div>
+                      <div id="whole_pay">
+                        <span>2,583,000원</span>
+                      </div>
+                    </div>
+                    <div class="search_pay">
+                      <div id="term_search">
+                        <input type="text" id="search_start_day2" placeholder="검색시작날짜"/>
+                        <input type="text" id="search_finish_day2" placeholder="검색끝날짜"/>
+                      </div>
+                      <div id="brand_search">
+                        <select>
+                          <option class="guide" disabled>기업 선택</option>
+                          <option selected>모든 기업</option>
+                          <option>쿠팡</option>
+                          <option>파리바게트</option>
+                        </select>
+                      </div>
+                      <div id="pay_search">
+                        <select>
+                          <option class="guide" disabled>임금 선택</option>
+                          <option selected>모든 임금</option>
+                          <option>지급 임금</option>
+                          <option>미지급 임금</option>
+                        </select>
+                      </div>
+                      <input type="button" id="search_pay_btn" value="검색"/>
+                    </div>
+                    <div class="separate_pay">
+                      <table>
+                        <tr>
+                          <th>급여</th>
+                          <td>2,000,000원</td>
+                        </tr>
+                        <tr>
+                          <th>연장</th>
+                          <td>150,000원</td>
+                        </tr>
+                        <tr>
+                          <th>주휴</th>
+                          <td>182,000원</td>
+                        </tr>
+                        <tr>
+                          <th>야간</th>
+                          <td>251,000원</td>
+                        </tr>
+                      </table>
+                      <div id="arrow">
+                        <img src="arrow.png">
+                      </div>
+                      <div id="pay_sum">
+                        <span>2,583,000원</span>
+                      </div>
+                    </div>
+                    <div class="pay_list">
+                      <table>
+                        <tr>
+                          <th>날짜</th>
+                          <th>기업명</th>
+                          <th>임금</th>
+                          <th>요청</th>
+                        </tr>
+                        <tr>
+                          <td>7/23</td>
+                          <td>파리바게트</td>
+                          <td>2,583,000</td>
+                          <td><input type="button" id="call_pay" value="요청"/></td>
+                        </tr>
+                      </table>
+                    </div>
                   </div>
                 </form>
               </div>
